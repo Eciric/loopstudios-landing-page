@@ -1,0 +1,14 @@
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-black: hsl(0, 0%, 0%);
+	--clr-dark-gray: hsl(0, 0%, 55%);
+	--clr-very-dark-gray: hsl(0, 0%, 41%);
+
+	--fs-regular: 15px;
+
+	--ff-regular: "Alata", sans-serif;
+	--ff-light: "Josefin Sans", sans-serif;
+
+	--fw-regular: 400;
+	--fw-light: 300;
+}
