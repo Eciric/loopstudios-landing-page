@@ -8,6 +8,10 @@ body {
 	color: var(--clr-black);
 }
 
+ul {
+	list-style: none;
+}
+
 .mobile-hamburger {
 	display: none;
 }
@@ -141,4 +145,73 @@ nav-list a:focus-visible {
 .text__container > p {
 	padding-top: var(--size-500);
 	line-height: 1.75;
+}
+
+.creations {
+	margin-top: 9rem;
+}
+
+.creations__title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: var(--size-700);
+}
+
+.creations__title > h2 {
+	font-family: var(--ff-light);
+	font-size: var(--size-700);
+	text-transform: uppercase;
+}
+
+.creations__title > button {
+	border: none;
+	background: none;
+	outline: 2px solid black;
+	height: fit-content;
+	padding: var(--size-200) var(--size-500);
+	text-transform: uppercase;
+	letter-spacing: var(--size-100);
+}
+
+.creations__title > button:hover {
+	cursor: pointer;
+}
+
+.creations__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--size-500);
+}
+
+.list__item {
+	position: relative;
+	isolation: isolate;
+	z-index: 0;
+}
+
+.image-darken {
+	position: absolute;
+	inset: 0;
+	z-index: 22;
+	background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.55));
+}
+
+.item__caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 33;
+	font-size: var(--size-600);
+	font-family: var(--ff-light);
+	font-weight: var(--fw-light);
+	color: var(--clr-white);
+	text-transform: uppercase;
+	width: 10ch;
+	line-height: 1.05;
+	padding-left: var(--size-600);
+	padding-bottom: var(--size-500);
+}
+
+#thegrid {
+	width: 4ch;
 }
