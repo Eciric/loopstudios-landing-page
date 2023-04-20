@@ -73,6 +73,10 @@ body {
 		display: none;
 	}
 
+	.primary-header {
+		padding: var(--size-700) 0;
+	}
+
 	.primary-header > .container {
 		position: relative;
 		display: flex;
@@ -124,9 +128,9 @@ body {
 	display: none;
 }
 
-.introduction {
+.intro {
 	display: grid;
-	align-content: center;
+	align-items: center;
 	width: 100%;
 	height: 800px;
 	background: rgba(0, 0, 0, 0.35) url("../images/desktop/image-hero.jpg");
@@ -135,13 +139,9 @@ body {
 	background-blend-mode: darken;
 }
 
-@media (max-width: 50em) {
-	.introduction {
-		background: rgba(0, 0, 0, 0.35) url("../images/mobile/image-hero.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-blend-mode: darken;
-	}
+.introduction {
+	outline: 3px var(--clr-white) solid;
+	width: fit-content;
 }
 
 .introduction__heading {
@@ -150,12 +150,24 @@ body {
 	line-height: 1.05;
 	text-transform: uppercase;
 	font-weight: var(--fw-light);
-	font-size: clamp(1rem, 10vw, 5rem);
+	font-size: clamp(1rem, 9vw, 5rem);
 	font-family: var(--ff-light);
 
 	padding: var(--size-700);
 	padding-right: var(--size-900);
-	outline: 3px var(--clr-white) solid;
+}
+
+@media (max-width: 50em) {
+	.intro {
+		background: rgba(0, 0, 0, 0.35) url("../images/mobile/image-hero.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: darken;
+	}
+
+	.introduction {
+		margin-inline: auto;
+	}
 }
 
 @media (max-width: 25em) {
